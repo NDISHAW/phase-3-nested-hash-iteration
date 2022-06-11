@@ -25,37 +25,14 @@ contacts.each do |person, data|
   data.each do |attr, value|
     if attr == :favorite_ice_cream_flavors
       value.each do |flavor|
-         "#{flavor}"
-      end
-    end
-  end
-end
-
-emails=[]
-contacts.each do |person, data|
-  data.each do |attr, value|
-    if attr == :email
-      emails << value
-    end
-  end
-end
-  # puts emails
+        puts 
 
 def remove_strawberry(contacts)
-  contacts.each do |person, contact_details_hash|
-    if person == "Freddy Mercury"
-      contact_details_hash.each do |attribute, data|
-        if attribute == :favorite_ice_cream_flavors
-          data.delete_if {|ice_cream| ice_cream == "strawberry"}
-        binding.pry
-        end
-      end
-    end
-  end
+  # your code here!
 end
 
 # print the output to the terminal for inspection
-#pp remove_strawberry(contacts)
+pp remove_strawberry(contacts)
   # contacts.each do |person, data|
   #   print "#{person}: #{data}"
   # end
